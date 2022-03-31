@@ -1,0 +1,87 @@
+/*
+COLOURS:
+
+*/
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-weight: 400;
+    font-size: 100%; /* This defines a REM */
+    line-height: 1.7;
+    color: #333;
+    background-color: #F2F2F2;
+    text-rendering: optimizeLegibility;
+}
+
+/* -------------------------------Resuable ---------------------------- */
+
+.row {
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+
+.hero-header {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)),
+        url(../elements/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Page Intro --- */
+.page-intro {
+    max-width: 1400px
+}
+
+.page-intro h3, .intro-text {
+    
+}
+
+.intro-image {
+    height: auto;
+    width: 500px;
+    margin: auto
+}
+
+.intro-text {
+
+}
+
+/* --- Divider Image --- */
+
+.divider-image {
+    margin: 20px 0px;
+    height: 300px;
+    width: auto;
+}
+
+.divider-image img {
+    width: auto;
+    height: auto;
+}
+
+/* --- Recent Works  --- */
+
+.recent-works {
+    max-width: 1400px
+}
+
+
+/* BUTTONS */
