@@ -3,6 +3,15 @@ COLOURS:
 
 */
 
+/* FONTS */
+
+/* HERO */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&display=swap');
+
+/* Testimonial Example */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
 
 * {
 
@@ -13,11 +22,12 @@ COLOURS:
 
 html {
     font-weight: 400;
-    font-size: 100%; /* This defines a REM */
+    font-size: 62.5%; /* This defines a REM */
     line-height: 1.7;
     color: #333;
     background-color: #F2F2F2;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 /* -------------------------------Resuable ---------------------------- */
@@ -29,59 +39,520 @@ html {
 
 }
 
-section {
+/* section {
     padding: 50px 0;
+} */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+   
+}
+
+.heading-secondary {
+    font-size: 4.4rem;
+    line-height: 1.2rem;
+}
+
+.heading-tertiary {
+    font-size: 3rem;
+    line-height: 1.2rem;
+    margin-bottom: 3.2rem;
+}
+
+/* Example Testimonials */
+
+.example-test {
+    background-color: #F9F5F1;
+    padding: 6.4rem 0;
+    text-align: center;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.review {
+    font-size: 2.4rem;
+    max-width: 800px;
+    margin: 2rem  auto;
+}
+
+.review-container {
+    max-width: 70rem;
+    margin: auto;
+    float: none;
+}
+
+.review::before { 
+    content: " " open-quote;
+    color: #B5ACD7;
+} 
+.review::after { 
+    content: " " close-quote;
+    color: #B5ACD7;
+} 
+
+.reviewer, .reviewer-location {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.read-all {
+    margin-top: 4rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.read-all-btn:link,
+.read-all-btn:visited {
+
+    font-size: 1.4rem;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+  }
+  
+  .read-all-btn:hover,
+  .read-all-btn:active {
+    color: #000;
+    border-bottom: 1px solid transparent;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+      color: #000;
+  }
+
+/**************************/
+/* HEADER */
+/**************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav .fa-xmark {
+  display: none;
 }
 
 
+/* ************************************** */
+/*      HEADER 
+/* ************************************** */
 
 .hero-header {
-    height: 100vh;
+    height: 95vh;
     background-image: linear-gradient(to right bottom,
-            rgba(0, 0, 0, 0.6),
-            rgba(0, 0, 0, 0.8)),
-        url(../elements/hero.jpg);
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.2)),
+        url(../elements/hero/hero.jpg);
     background-size: cover;
     background-position: center;
 }
 
-/* --- Page Intro --- */
-.page-intro {
-    max-width: 1400px
+.text-box {
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
 }
 
-.page-intro h3, .intro-text {
-    
+.heading-hero {
+
+    display: block;
+    font-size: 5rem;
+    /* Imported via Stylesheet*/
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+
+}
+
+/* --- Page Intro --- */
+.section-page-intro {
+    max-width: 140rem;
+    padding: 9.6rem 0;
+    margin: 0 auto;
 }
 
 .intro-image {
-    height: auto;
-    width: 500px;
+    max-height: auto;
+    max-width: 50rem;
     margin: auto
 }
 
 .intro-text {
-
+    font-size: 2rem;
 }
 
 /* --- Divider Image --- */
 
-.divider-image {
-    margin: 20px 0px;
-    height: 300px;
-    width: auto;
+.divider {
+    height: 50rem;
 }
 
-.divider-image img {
-    width: auto;
-    height: auto;
+/* Divider on Index Page */
+.divide-1 {
+    background-image: url(../elements/scotland.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- Instagram Showcase  --- */
+
+.instagram-showcase {
+    padding: 9.6rem 0;
+    max-width: 180rem;
+    text-align: center;
+}
+
+.instagram-share {
+    font-size: 1.8rem;
+}
+
+.instagram-link {
+    font-size: 1.4rem;
+    margin-bottom: 2.6rem;
+}
+
+.instagram-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.instagram-item img {
+    width: 30rem;
+    height: 30rem;
 }
 
 /* --- Recent Works  --- */
 
 .recent-works {
-    max-width: 1400px
+    max-width: 180rem;
+    margin: auto;
+    padding: 9.6rem 0;
 }
 
 
+
+/* ************************************** */
+/*      Packages Section */
+/* ************************************** */
+
+.section-packages-intro {
+    padding: 9.6rem 0;
+    text-align: center;  
+}
+
+.packages-container {
+    /* 1140px */
+    max-width: 100rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+
+.package-info {
+    padding: 9.6rem 0;
+    max-width: 130rem;
+}
+
+.package-info div {
+    margin: auto;
+    max-width: 600px;
+}
+
+/* ************************************** */
+/*      Featured In Section */
+/* ************************************** */
+
+.section-featured {
+    padding: 4.8rem 0 3.2rem 0;
+}
+
+.section-featured > .container {
+    max-width: 130rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.heading-featured-in {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-size: 500;
+    text-align: center;
+    margin-bottom: 2.4rem;
+    color: #888;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos img {
+    height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+}
+
+/* ************************************** */
+/*      Galleyr Section */
+/* ************************************** */
+
+.gallery-header {
+        height: 40vh;
+        background-image: linear-gradient(to right bottom,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.2)),
+            url(../elements/hero/hero.jpg);
+        background-size: cover;
+        background-position: center;
+}
+
+.gallery-text-box {
+
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+  }
+
+/* ************************************** */
+/*      Galleyr Section */
+/* ************************************** */
+
+.packages-header {
+    height: 40vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.2)),
+        url(../elements/hero/packages.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.packages-text-box {
+text-align: center;
+position: absolute;
+top: 25%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #FFF;
+}
+
+/* ************************************** */
+/*      Testimonials Section */
+/* ************************************** */
+
+.review-header {
+    height: 40vh;
+    background-image: linear-gradient(to right bottom,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.2)),
+        url(../elements/hero/review.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.review-text-box {
+text-align: center;
+position: absolute;
+display: block;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: #FFF;
+}
+
+.review-heading-hero {
+ 
+    font-size: 2.8rem;
+    /* Imported via Stylesheet*/
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.review-hero-text {
+    font-size: 1.6rem;
+ 
+    font-weight: 200;
+    letter-spacing: 4px;
+
+}
+
+/* ************************************** */
+/*      CONTACT Section  */
+/* ************************************** */
+
+
+/* ************************************** */
+/*      FOOTER Section  */
+/* ************************************** */
+
+.footer {
+    background-color: #333;
+    padding-top: 1.2rem;
+}
+
+.footer section:first-child {
+    padding: 2.4rem 0; 
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    display: block;
+    margin-bottom: 3.2rem;
+  }
+
+.footer-heading {
+    font-size: 1.8rem;
+    color: #888;
+    margin-bottom: 2rem;
+}
+
+.footer a:link,
+.footer a:visited {
+    font-size: 1.6rem;
+    color: #F3F3F3;
+    text-decoration: none;
+    margin-bottom: 1.4rem;
+    transition: all 0.3s;
+}
+
+.footer a:hover,
+.footer a:active {
+    color: #888;
+    transition: all 0.3s;
+}
+
+
+
+/* Sub Footer */
+.sub-footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    color: #333;
+    background-color: #F3F3F3;
+}
+
+.sub-footer div {
+    margin: 0 10rem;
+}
+
+.sub-footer ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap:  3.2rem;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 1.6rem;
+}
+
+.footer-icon {
+    font-size: 2.4rem;
+    color: #333;
+}
+
+.footer-icon:hover {
+    color: #888;
+}
+
 /* BUTTONS */
+
+/* Reusable */
