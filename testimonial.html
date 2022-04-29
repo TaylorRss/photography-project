@@ -15,27 +15,60 @@
 
      <!-- Media Queries-->
      <link href="css/queries.css" rel="stylesheet" type="text/css">
+     
+     <!-- FONTS -->
+     <link href="css/font.css" rel="stylesheet" type="text/css">
 
-      <!-- Media Queries-->
+      <!-- JS-->
       <script defer src="js/script.js"></script>
 
      <!-- Font Awesome -->
      <script src="https://kit.fontawesome.com/7412cd19f4.js" crossorigin="anonymous"></script>
-    <title>Testimonials</title>
+    <title>Testimonials | What our Clients say</title>
 </head>
 <body>
     
-  <header class="header">
-    <img class="logo" alt="OmniFood Logo" src="elements/omnifood-logo.png">
-    <nav class="main-nav">
-        <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="packages.html">Packages</a></li>
-            <li><a class="main-nav-link" href="gallery.html">Galleries</a></li>
-            <li><a class="main-nav-link" href="#">Testimonial</a></li>
-            <li><a class="main-nav-link" href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">JoSmith</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Galleries
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="gallery/nature.html">Nature</a></li>
+                      <li><a class="dropdown-item" href="gallery/wedding.html">Weddings</a></li>
+                      <li><a class="dropdown-item" href="gallery/family.html">Family</a></li>
+                      <li><a class="dropdown-item" href="gallery/commercial.html">Commercial</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="packages.html">Packages</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="testimonial.html">Testimonial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
 
     <!--Main Content Starts Here -->
     <main>
@@ -44,16 +77,145 @@
       <div class="review-text-box">
         <h1 class="review-heading-hero">
             <span>What Clients have to say</span>
-            <p class="review-hero-text"><p>
-                <a href="" class="review-btn">Read All Reviews</a>
         </h1>
     </div>
     </section>
 
+    <section class="section-testimonials-intro">
+        <p class="testimonial-intro--text container">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Sequi distinctio doloribus aperiam ab neque exercitationem impedit nemo omnis nulla accusamus eligendi amet ea cum, consequuntur tempora. Minus, blanditiis! At, quod.
+        </p>
+    </section>
 
+    <section class="testimonials">
+        <div class="grid grid--3-cols container">
+
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer1.jpg" alt="Photo of Client Lewis Whittaker">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+            <p class="testimonial-name">&mdash; Lewis Whittaker</p>
+            </figure>
+
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer2.jpg" alt="Photo of Client Arun Wilkins">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+            <p class="testimonial-name">&mdash; Arun Wilkins</p>
+            </figure>
+
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer3.jpg" alt="Photo of Client Ashleigh Rawlings">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</blockquote>
+            <p class="testimonial-name">&mdash; Ashleigh Rawlings</p>
+            </figure>
+
+            <!-- ROW 2 -->
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer4.jpg" alt="Photo of Client Sally Castro">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</blockquote>
+            <p class="testimonial-name">&mdash; Sally Castro</p>
+            </figure>
+
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer5.jpg" alt="Photo of Client Amelia-Rose Roy">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</blockquote>
+            <p class="testimonial-name">&mdash; Amelia-Rose Roy</p>
+            </figure>
+
+            <figure class="testimonial">
+                <img class="testimonial-img" src="elements/customer/customer6.jpg" alt="Photo of Client Sean Barron">
+            <blockquote class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</blockquote>
+            <p class="testimonial-name">&mdash; Sean Barron</p>
+            </figure>
+
+
+        </div>
+    </section>
+
+    <!-- Section with Two Columns - Image to the Left with Text with Link to Gallery on the Right - CTA -->
+    <section class="section-testimonial-gallery">
+        <div class="grid grid--2-cols">
+
+            <div>
+                <img src="elements/contact-end.jpg" class="img-fluid" alt="Photo of Couple on Beach just about to Kiss">
+            </div>
+            <div class="testimonial-gallery--text">
+                <p class="heading-tertiary">Every Story is Unique</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim tortor at auctor.</p>
+
+                <a href="gallery.html" class="btn btn-primary-css">Explore Galleries</a>
+            </div>
+
+        </div>
+    </section>
 
      
     <!-- Footer -->
+    <footer class="footer">
+        <section class="grid grid--4-cols container">
+
+            <div class="col">
+                <a href="index.html" class="footer-logo">
+                    <img class="logo" alt="JoSmith Logo" src="elements/logo/Logo-White.png">
+                </a>
+            </div>
+
+            <div class="col">
+                <p class="footer-heading">Contact</p>
+                <ul class="nav flex-column">
+                    <li><a href="mailto:enquire@josmithphoto.com" class="">enquire@josmithphoto.com</a></li>
+                    <li><a href="#" class="">Phone No</a></li>
+                    <li><a href="#" class="">Dundee</a></li>
+                </ul> 
+            </div>
+
+            <div class="col">
+                <p class="footer-heading">Galleries</p>
+                <ul class="nav flex-column">
+                    <li><a href="gallery/wedding.html" class="footer-link">Wedding</a></li>
+                    <li><a href="gallery/family.html" class="footer-link">Family</a></li>
+                    <li><a href="gallery/commercial.html" class="footer-link">Commerical</a></li>
+                    <li><a href="gallery/nature.html" class="footer-link">Nature</a></li>
+                </ul>    
+            </div>
+
+            <div class="col">
+                <p class="footer-heading">Navigation</p>
+                <ul class="nav flex-column">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    <li><a href="testimonials.html" class="footer-link">Testimonials</a></li>
+                </ul>  
+
+            </div>
+        </section>
+        <!-- Contains JoSmith @ 2022 with Social Media Icons to the right-->
+        <section class="sub-footer">
+            <div class="copyright">Copyright  &copy; JoSmithPhoto 2022</div>
+
+            <div class="social-links">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f footer-icon"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter footer-icon"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-pinterest-p footer-icon"></i></a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+    </footer>
+
+
 
     </main>
 </body>

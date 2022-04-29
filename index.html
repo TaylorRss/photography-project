@@ -15,8 +15,11 @@
 
      <!-- Media Queries-->
      <link href="css/queries.css" rel="stylesheet" type="text/css">
+     
+     <!-- FONTS -->
+     <link href="css/font.css" rel="stylesheet" type="text/css">
 
-      <!-- Media Queries-->
+      <!-- JS-->
       <script defer src="js/script.js"></script>
 
      <!-- Font Awesome -->
@@ -25,27 +28,46 @@
     <title>JoSmith Photography | Home </title>
 </head>
 <body>
-  <header class="header">
-      <a href="#">
-        <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
-      </a>
-
-      <nav class="main-nav">
-        <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">How it works</a></li>
-          <li><a class="main-nav-link" href="#">Meals</a></li>
-          <li>
-            <a class="main-nav-link" href="#">Testimonials</a>
-          </li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">JoSmith</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Galleries
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="gallery/nature.html">Nature</a></li>
+                  <li><a class="dropdown-item" href="gallery/wedding.html">Weddings</a></li>
+                  <li><a class="dropdown-item" href="gallery/family.html">Family</a></li>
+                  <li><a class="dropdown-item" href="gallery/commercial.html">Commercial</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="packages.html">Packages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonial.html">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
       </nav>
-
-      <button class="btn-mobile-nav">
-        <i class="fa-solid fa-bars icon-mobile-nav"></i>
-        <i class="fa-solid fa-xmark icon-mobile-nav"></i>
-      </button>
     </header>
 
 <section class="hero-header">
@@ -54,20 +76,18 @@
         <span>JoSmith.</span>
     </h1>
 
-    <a href="gallery.html" class="">View Gallery</a>
-
 </div>
 </section>
 
     <main>
     
     <!-- Section with Page Intro and Introduction to the Client with a 2 Column Structure-->
-    <section class="section-page-intro mx-auto">
-        <div class="row">
-            <div class="col-md-6 m-auto"><img class="img-fluid w-100 mb-md-3 intro-image" src="elements/js/smile.jpg"></div>
+    <section class="section-index-intro">
+        <div class="row grid grid--2-cols">
+            <div class="m-auto"><img class="img-fluid w-100 mb-md-3 intro-image" src="elements/js/looking-offscreen.jpg"></div>
             <!-- Right Col-->
-            <div class="col-md-6 m-auto">
-                <h3 class="heading-tertiary mb-5">Heading</h3>
+            <div class="m-auto">
+                <h3 class="heading-tertiary mb-5">A Picture is worth a thousand words</h3>
       
                 <p class="fs-3 mt-4"> Jo Smith Photography is a leading nature photographer with over eight years’ experience working within landscape and natural world photography, 
                     specialising in the landscapes of Scotland.</p>
@@ -77,67 +97,84 @@
             </div>
     </div>
     </section>
-    
-
-    <!--  Image Section - Acts as a Divider  -->
-    <section class="divider divide-1">
-
-    </section>
-    
 
     <!--  Recent Works - Has a Heading and Text to the Left, With 2 images to the Right - Also includes link to Galleries -->
-    <section class="recent-works row">
-      <h3 class="heading-secondary">Recent Works</h3>
-        <div class="col-md-4 m-auto">
+    <section class="recent-works">
+    <h3 class="heading-secondary">Recent Works</h3>
+    <div class="recent-works--container">
+        <div class="col m-auto">
 
             <p class="fs-3 mt-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                 Iusto obcaecati beatae facere sed, sit, inventore officia dolorum odit labore itaque reiciendis. 
                 Dolor accusantium debitis itaque corporis, sit nisi ducimus fugit.</p>
-                
-            <h3 class="">Heading</h3>
-            <p class="fs-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt aut, a nesciunt quisquam iste esse impedit
-                ,obcaecati optio vero sed omnis dolor et eius illum nihil minima expedita possimus.</p>
 
 
-                <a href=""><button type="button" class="btn btn-outline-dark btn-lg mt-2">Explore Galleries</button></a>
+                <a href="gallery.html"><button type="button" class="btn btn-primary-css mt-5">Explore Galleries</button></a>
         </div>
         <!-- Right Col-->
         
-        <div class="col-md-4"><img class="img-fluid intro-image w-100" src="elements/recent/wedding.jpg"></div>
+        <div class="col"><img class="img-fluid recent-works--img" src="elements/recent/wedding.jpg"></div>
                 
-        <div class="col-md-4"><img class="img-fluid intro-image w-100" src="elements/recent/church.jpg"></div>
+        <div class="col"><img class="img-fluid recent-works--img" src="elements/recent/church.jpg"></div>
+
+        <div class="col"><img class="img-fluid recent-works--img" src="elements/recent/nature.jpg"></div>
+    </div>
+    </section>
+    
+        <!-- Three Columns with more Text about Photogropher-->
+        <section class="section-more-info ">
+            <h2 class="heading-secondary text-center">More about me</h2>
+        <div class="container grid grid--3-cols">
+
+            <div>
+                <p class="more-info-heading">Test</p>
+                <p class="more-info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quaerat ratione consectetur eos.
+                    Cupiditate, aspernatur autem. 
+                    Labore nam excepturi soluta necessitatibus id et. 
+                    Quod architecto distinctio ea, sit amet id?</p>
+            </div>
+            <div>
+                <p class="more-info-heading">Test</p>
+                <p class="more-info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quaerat ratione consectetur eos.
+                    Cupiditate, aspernatur autem. 
+                    Labore nam excepturi soluta necessitatibus id et. 
+                    Quod architecto distinctio ea, sit amet id?</p>
+            </div>
+            <div>
+                <p class="more-info-heading">Test</p>
+                <p class="more-info-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quaerat ratione consectetur eos.
+                    Cupiditate, aspernatur autem. 
+                    Labore nam excepturi soluta necessitatibus id et. 
+                    Quod architecto distinctio ea, sit amet id?</p>
+            </div>
+    </div>
     </section>
 
     <!-- Section with more info about the Photographer-->
-    <section class="section-page-intro mx-auto">
-    
-        <!-- Three Columns with more Text about Photogropher-->
-        <div class="row row-cols-3">
-            <div>
-                <p class=""></p>
-            </div>
-            <div>
-                <p class=""></p>
-            </div>
-            <div>
-                <p class=""></p>
-            </div>
-        </div>
+    <section class="section-index-intro mx-auto">
       
-    <div class="row">
-      <div class="col-md-6 m-auto"><img class="img-fluid w-100 mb-md-3 intro-image" src="elements/js/umbrella.jpg"></div>
+    <div class="grid grid--2-cols">
+      <div class="m-auto"><img class="img-fluid" src="elements/js/sitting.jpg"></div>
       <!-- Right Col-->
-      <div class="col-md-6 m-auto">
-          <h3 class="">Heading</h3>
+      <div class="m-auto">
 
-          <p class="fs-3 mt-4"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-              Iusto obcaecati beatae facere sed, sit, inventore officia dolorum odit labore itaque reiciendis. 
-              Dolor accusantium debitis itaque corporis, sit nisi ducimus fugit.</p>
-              
-          <p class="fs-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt aut, a nesciunt quisquam iste esse impedit
-              ,obcaecati optio vero sed omnis dolor et eius illum nihil minima expedita possimus.</p>
+        <span class="heading-secondary">Heading</span>
 
+        <p class="fs-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt aut, a nesciunt quisquam iste esse impedit
+            ,obcaecati optio vero sed omnis dolor et eius illum nihil minima expedita possimus.</p>
+
+
+        <p class="fs-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt aut, a nesciunt quisquam iste esse impedit
+                  ,obcaecati optio vero sed omnis dolor et eius illum nihil minima expedita possimus.</p>
+
+        <p class="fs-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt aut, a nesciunt quisquam iste esse impedit
+            ,obcaecati optio vero sed omnis dolor et eius illum nihil minima expedita possimus.</p>
+            
+        <a href=""><button type="button" class="btn btn-ghost-css mt-5">About Jo</button></a>
           </div>
+
+          
+
   </div>
   </section>
 
@@ -148,44 +185,14 @@
 
     Button Text (CONTACT US)
 -->
-    <!-- Section with row of Images from Instagram-->
-    
-    <section class="instagram-showcase text-center m-auto">
-        <h2 class="heading-tertiary">Sneak Peek</h2>
-        <p class="instagram-share">Check out my Instagram</p>
-        <a class="read-all-btn" href="#">@JoSmithPhoto</a>
-        <div class="instagram-row">
-            <div class="instagram-item">
-                <img src="elements/instagram/castle.jpg" class="" alt="">
-            </div>
-            
-            <div class="instagram-item">
-                <img src="elements/instagram/family.jpg" class="" alt="">
-            </div>
-            <div class="instagram-item">
-                <img src="elements/instagram/wedding.jpg" class="" alt="">
-            </div>
-            <div class="instagram-item">
-                <img src="elements/instagram/man.jpg" class="" alt="">
-            </div>
-            <div class="instagram-item">
-                <img src="elements/instagram/sea.jpg" class="" alt="">
-            </div>
-            <div class="instagram-item">
-                <img src="elements/instagram/sheep.jpg" class="" alt="">
-            </div>
-        </div>
-    </section>  
-
-
 
     <!-- Footer -->
-    <footer class="text-white footer">
-        <section class="d-flex row-cols-4 footer-container">
+    <footer class="footer">
+        <section class="grid grid--4-cols container">
 
             <div class="col">
-                <a href="#" class="footer-logo">
-                    <img class="logo" alt="JoSmith Logo" src="elements/omnifood-logo.png">
+                <a href="index.html" class="footer-logo">
+                    <img class="logo" alt="JoSmith Logo" src="elements/logo/Logo-White.png">
                 </a>
             </div>
 
@@ -201,10 +208,10 @@
             <div class="col">
                 <p class="footer-heading">Galleries</p>
                 <ul class="nav flex-column">
-                    <li><a href="#" class="footer-link">Wedding</a></li>
-                    <li><a href="#" class="footer-link">Family</a></li>
-                    <li><a href="#" class="footer-link">Commerical</a></li>
-                    <li><a href="#" class="footer-link">Nature</a></li>
+                    <li><a href="gallery/wedding.html" class="footer-link">Wedding</a></li>
+                    <li><a href="gallery/family.html" class="footer-link">Family</a></li>
+                    <li><a href="gallery/commercial.html" class="footer-link">Commerical</a></li>
+                    <li><a href="gallery/nature.html" class="footer-link">Nature</a></li>
                 </ul>    
             </div>
 
@@ -221,7 +228,7 @@
         </section>
         <!-- Contains JoSmith @ 2022 with Social Media Icons to the right-->
         <section class="sub-footer">
-            <div class="copyright">Copyright  &copy; JoSmithPhoto 2022 &</div>
+            <div class="copyright">Copyright  &copy; JoSmithPhoto 2022</div>
 
             <div class="social-links">
                 <ul>
